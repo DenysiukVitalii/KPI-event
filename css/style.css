@@ -25,14 +25,14 @@ a.navbar-brand > p {
   display: inline-block;
   font-size: 3em;
   color: #57a342;
-  margin-left:20px;
+  margin-left:10px;
 }
 a.navbar-brand>p:hover  {
   color:#6cc952;
 }
 
 .collapse.navbar-collapse>ul {
-  margin-right:40px;
+  margin-right:30px;
   font-size: 18px;
 }
 .collapse.navbar-collapse>ul>li {
@@ -70,7 +70,7 @@ a.navbar-brand>p:hover  {
 
 article {
   display:block;
-  padding: 10px;
+  padding: 15px;
   margin-bottom: 20px;
   box-sizing: border-box;
   border: 1px solid #ccc;
@@ -101,6 +101,17 @@ a.next{
   background: #99c0ff;
   color: #fff;
 }
+
+.sponsors>h2 {
+  text-align: center;
+}
+.sponsors>.sponsor>a>img.sp {
+  max-width:100%;
+}
+.sponsors>.sponsor {
+  margin-bottom: 60px;
+}
+
 @font-face {
  font-family: RobotoMedium; /* Имя шрифта */
  src: url(../fonts/RobotoMedium.ttf); /* Путь к файлу со шрифтом */
