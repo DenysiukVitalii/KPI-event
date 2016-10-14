@@ -112,6 +112,44 @@ a.next{
   margin-bottom: 60px;
 }
 
+footer {
+  background: #4c4c4c;
+  height: auto;
+  color: #000;
+  padding:10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+}
+#footer_info>li {
+  list-style: none;
+}
+footer>ul{
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+footer>ul>li {
+  display:inline-block;
+  margin-right: 20px;
+}
+
+footer>ul>li:last-child {
+  display:inline-block;
+  margin-right: 0px;
+}
+
+footer>p {
+  text-align: center;
+}
+#footer_info>li>a {
+  color: #fff;
+}
+#footer_info>li>a:hover {
+  text-decoration: none;
+  color: #57a342;
+}
 @font-face {
  font-family: RobotoMedium; /* Имя шрифта */
  src: url(../fonts/RobotoMedium.ttf); /* Путь к файлу со шрифтом */
