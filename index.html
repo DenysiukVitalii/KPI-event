@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>КПІ івент</title>
 
   <link href="css/bootstrap.css" rel="stylesheet">
@@ -21,9 +21,22 @@
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
      </button>
-
      <div class="navbar-header">
-      <a href="#" class="navbar-brand"><p><i>КПІ івент</i></p></a>
+       <a href="">
+       <div class="logoitem">
+         <div class="icon">
+           <div class="top">
+             <div class="red"></div>
+             <div class="yellow"></div>
+           </div>
+           <div class="bottom">
+             <div class="green"></div>
+             <div class="blue"></div>
+           </div>
+         </div>
+       </div>
+       </a>
+       <div class="name"><span><i>КПІevent</i></span></div>
      </div>
 
      <div class="collapse navbar-collapse" id="responsive-menu">
@@ -119,21 +132,43 @@
           <div class="sponsor"><a href="http://www.lohika.com/"><img src="img/sp3.jpg" class="sp" alt=""></a></div>
           <div class="sponsor"><a href="http://www.prom.ua/"><img src="img/sp4.jpg" class="sp" alt=""></a></div>
           <div class="sponsor"><a href="http://lits.ua/"><img src="img/sp5.jpg" class="sp" alt=""></a></div>
+          <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+          <div style='overflow:hidden;height:350px;max-width:100%;'>
+            <div id='gmap_canvas' style='height:350px;max-width:100%;'></div>
+            <div><small><a href="http://embedgooglemaps.com">embedgooglemaps.com</a></small></div>
+            <div><small><a href="http://buyproxies.io/">shared proxies</a></small></div>
+            <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+          </div>
+          <script type='text/javascript'>
+            function init_map()
+            { var myOptions = {zoom:13,center:new google.maps.LatLng(50.447063164120934,30.511244661218246),
+              mapTypeId: google.maps.MapTypeId.ROADMAP};
+
+              map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+              marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(50.447063164120934,30.511244661218246)});
+
+              infowindow = new google.maps.InfoWindow({content:'<strong>Название</strong><br>Киев, Украина, ул. Политехничиская<br>'});
+
+              google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});
+
+              infowindow.open(map,marker);
+            }
+            google.maps.event.addDomListener(window, 'load', init_map);
+          </script>
         </div>
       </div>
     </div>
   </div>
 
   <footer>
+
     <ul id="footer_info">
-      <li style="color:#57a342">КПІ івент</li>
+      <li style="color:#57a342">КПІevent</li>
       <li><a href="">Контакти</a></li>
       <li><a href="">Реєстрація</a></li>
     </ul>
       <p>Copyright ©2016 всі права захищені</p>
   </footer>
-
-
 
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

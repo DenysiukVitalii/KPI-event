@@ -10,12 +10,72 @@ header .container {
   box-sizing: border-box;
   position: relative;
 }
+.navbar-header{
+  display: flex;
+  flex-direction: row;
+}
+.navbar-header .name {
+  padding: 6px 18px;
+  font-size: 15px;
+  font-family: RobotoMedium;
 
+}
+.navbar-header span {
+    font-size: 30px;
+  font-family: RobotoMedium;
+  vertical-align: middle;
+}
+
+
+
+.icon {
+  margin-left: 30px;
+  width: 60px;
+  height: 60px;
+  display: inline-flex;;
+  flex-direction: column;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.top, .bottom {
+  width: 60px;
+  height: 30px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+.bottom {
+  display: flex;
+  align-items: flex-end;
+}
+
+.icon:hover {
+  transform: rotate(45deg);
+  border: none;
+}
+.icon>.top>div, .icon>.bottom>div  {
+  width: 25px;
+  height: 25px;
+}
+.icon .red {
+  background: red;
+}
+.icon .blue {
+  background: blue;
+}
+.icon .green {
+  background: green;
+}
+.icon .yellow {
+  background: yellow;
+
+}
 .navbar.navbar-default {
   padding: 30px 0px;
   border-radius: 0px;
   box-sizing: border-box;
-  margin: 0 40px 0 40px;
+  margin-bottom: 0;
   background: #fff;
   border:none;
   box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
@@ -23,7 +83,7 @@ header .container {
 a.navbar-brand > p {
   font-family: RobotoBold;
   display: inline-block;
-  font-size: 3em;
+  font-size: 1em;
   color: #57a342;
   margin-left:10px;
 }
@@ -44,23 +104,24 @@ a.navbar-brand>p:hover  {
 }
 .social-icons {
   position:absolute;
-  right: 100px;
+  right: 15px;
   top:0;
-  background: #f2f2f2;
-  border-left: 1px solid #57a342;
-  border-right: 1px solid #57a342;
-  border-bottom: 1px solid #57a342;
+  background: #57a342;
+
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   padding:10px;
+  z-index: 101;
+    overflow: hidden;
+
 }
 .social-icons>a {
   display: inline-block;
   margin: 0 10px 0 10px;
-  color:#6cc952;
+  color:#fff;
 }
 .social-icons>a:hover {
-  color: #57a342;
+  color: #000;
 }
 
 #carousel {
@@ -121,6 +182,7 @@ footer {
   font-size: 18px;
   width: 100%;
   text-align: center;
+  margin-top: 20px;
 }
 #footer_info>li {
   list-style: none;
