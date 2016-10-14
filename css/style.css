@@ -4,8 +4,7 @@
 body {
   background: #f5fff2;
 }
-header {
-  margin: 0 20px 0 20px;
+header .container {
   padding: 10px;
   padding-top: 30px;
   box-sizing: border-box;
@@ -19,9 +18,11 @@ header {
   margin: 0 40px 0 40px;
   background: #fff;
   border:none;
+  box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
 }
 a.navbar-brand > p {
   font-family: RobotoBold;
+  display: inline-block;
   font-size: 50px;
   color: #57a342;
   margin-left:20px;
@@ -34,6 +35,10 @@ a.navbar-brand>p:hover  {
   margin-right:40px;
   font-size: 18px;
 }
+.collapse.navbar-collapse>ul>li {
+  border-bottom: 1px solid transparent;
+}
+
 .collapse.navbar-collapse>ul>li:hover {
   border-bottom: 1px solid #57a342;
 }
@@ -42,6 +47,9 @@ a.navbar-brand>p:hover  {
   right: 100px;
   top:0;
   background: #f2f2f2;
+  border-left: 1px solid #57a342;
+  border-right: 1px solid #57a342;
+  border-bottom: 1px solid #57a342;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   padding:10px;
@@ -49,10 +57,15 @@ a.navbar-brand>p:hover  {
 .social-icons>a {
   display: inline-block;
   margin: 0 10px 0 10px;
-  color: #ccc;
+  color:#6cc952;
 }
 .social-icons>a:hover {
   color: #57a342;
+}
+
+#carousel {
+//	min-width: 800px;
+	margin: 30px auto;
 }
 @font-face {
  font-family: RobotoMedium; /* Имя шрифта */
