@@ -195,9 +195,34 @@ footer {
   margin-top: 20px;
 }
 .totop {
+  position: fixed;
+  bottom: -50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border:2px solid #57a342;
+  background: #ccc;
+  z-index: 100;
+  outline: 0!important;
+  transition: 0.4s;
+}
+.totop.active {
+  bottom: 50px;
+}
+.totop:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #57a342;;
+  border-left: 2px solid #57a342;;
+  transform: rotate(45deg);
   position: absolute;
-  top:15px;
-  left: 15px;
+  top: 4px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .totop a:focus {
   color:#fff;

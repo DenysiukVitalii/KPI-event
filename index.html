@@ -11,6 +11,21 @@
 	<link href="css/font-awesome.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="img/icon.png">
 
+  <script type="text/javascript" src="js/jquery.1.7.1.min.js"></script>
+	<script type="text/javascript">
+    $(function() {
+      $('body').append('<button class="totop" />');
+
+      $('.totop').click(() => {
+        $('body').animate({'scrollTop': 0}, 1000);
+        $('html').animate({'scrollTop': 0}, 1000);
+      });
+
+      $(window).scroll(() => {
+        ($(window).scrollTop() > 200) ? $('.totop').addClass('active'):$('.totop').removeClass('active');
+      });
+    });
+	</script>
 </head>
 <body style="padding-right: 0">
   <header id="start">
@@ -146,7 +161,7 @@
           function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(50.44729355388562,30.4585017031494),
             mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
             marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(50.44729355388562,30.4585017031494)});
-            infowindow = new google.maps.InfoWindow({content:'<strong>Название</strong><br>Киев, Украина, ул. Политехническая<br>'});
+            infowindow = new google.maps.InfoWindow({content:'<strong>КПІevent</strong><br>Киев, Украина, ул. Политехническая<br>'});
           google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}
           google.maps.event.addDomListener(window, 'load', init_map);
         </script>
@@ -165,8 +180,7 @@
       <li><a data-toggle="modal" data-target="#register">Реєстрація</a></li>
     </ul>
       <p>Copyright КПІevent© 2016 by <a href="https://denysiukvitalii.github.io/denysiuk-vv.github.io/">Vitalii Denysiuk</a></p>
-      <div class="totop"><a href="#start"><i class="fa fa-chevron-up fa-3x"></i></a></div>
-
+      <!-- <div class="totop"><a href="#start"><i class="fa fa-chevron-up fa-3x"></i></a></div> -->
   </footer>
 
   <div class="modal fade" id="register">
