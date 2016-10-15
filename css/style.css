@@ -4,6 +4,9 @@
 body {
   background: #f5fff2;
 }
+a {
+  cursor: pointer;
+}
 header .container {
   padding: 10px;
   padding-top: 30px;
@@ -13,6 +16,7 @@ header .container {
 .navbar-header{
   display: flex;
   flex-direction: row;
+  color:#006d0c;
 }
 .navbar-header .name {
   padding: 6px 18px;
@@ -104,7 +108,7 @@ a.navbar-brand>p:hover  {
 }
 .social-icons {
   position:absolute;
-  right: 15px;
+  right: 25px;
   top:0;
   background: #57a342;
 
@@ -116,13 +120,15 @@ a.navbar-brand>p:hover  {
 
 }
 .social-icons>a {
+  cursor: pointer;
   display: inline-block;
   margin: 0 10px 0 10px;
-  color:#fff;
+  color:#006d0c;
 }
 .social-icons>a:hover {
-  color: #000;
+  color:#00560a;
 }
+
 
 #carousel {
 //	min-width: 800px;
@@ -135,6 +141,7 @@ article {
   margin-bottom: 20px;
   box-sizing: border-box;
   border: 1px solid #ccc;
+  background: #fff;
 }
 article>p.img>img {
 max-width:100%;
@@ -212,6 +219,42 @@ footer>p {
   text-decoration: none;
   color: #57a342;
 }
+.modal-header {
+  background: #a8c9ff;
+}
+
+.modal-footer {
+  background: #f2f2f2;
+}
+.soc_reg {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+}
+.soc_reg > li {
+  display:inline-block;
+  margin-right: 10px;
+  list-style: none;
+}
+.soc_reg>li h4 {
+  color:#000;
+}
+.soc_reg>li a {
+  cursor: pointer;
+  text-decoration: none;
+  color:#013487;
+}
+.soc_reg>li a:hover {
+  color: #001b47;
+}
+
+.ent>button {
+  width:100px;
+}
+
+
+
 @font-face {
  font-family: RobotoMedium; /* Имя шрифта */
  src: url(../fonts/RobotoMedium.ttf); /* Путь к файлу со шрифтом */
