@@ -3,6 +3,7 @@
 }
 body {
   background: #f5fff2;
+
 }
 a {
   cursor: pointer;
@@ -180,7 +181,9 @@ a.next{
   margin-bottom: 60px;
 }
 
+
 footer {
+  position: relative;
   background: #4c4c4c;
   height: auto;
   color: #000;
@@ -191,13 +194,26 @@ footer {
   text-align: center;
   margin-top: 20px;
 }
+.totop {
+  position: absolute;
+  top:15px;
+  left: 15px;
+}
+.totop a:focus {
+  color:#fff;
+}
+.totop a:hover {
+  color: #57a342;
+}
 #footer_info>li {
   list-style: none;
 }
+
 footer>ul{
   display: block;
   margin: 0;
   padding: 0;
+  margin-bottom: 10px;
 }
 footer>ul>li {
   display:inline-block;
@@ -210,12 +226,14 @@ footer>ul>li:last-child {
 }
 
 footer>p {
+  color: #A7A79B;
   text-align: center;
 }
-#footer_info>li>a {
+footer a {
+  font-family: RobotoLight;
   color: #fff;
 }
-#footer_info>li>a:hover {
+footer a:hover {
   text-decoration: none;
   color: #57a342;
 }
@@ -268,4 +286,22 @@ footer>p {
 @font-face {
  font-family: RobotoBold; /* Имя шрифта */
  src: url(../fonts/RobotoBold.ttf); /* Путь к файлу со шрифтом */
+}
+
+@media screen and (max-width: 767px) {
+		.totop {
+      display: none;
+    }
+    .collapse.navbar-collapse>ul>li {
+      border-bottom: 1px solid #ccc;
+    }
+    .collapse.navbar-collapse>ul {
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+      margin: 0 auto;
+    }
+      .collapse.navbar-collapse {
+        margin-top: 10px;
+        text-align: center;
+      }
 }
