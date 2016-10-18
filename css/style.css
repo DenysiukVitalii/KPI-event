@@ -3,7 +3,6 @@
 }
 body {
   background: #f5fff2;
-
 }
 a {
   cursor: pointer;
@@ -30,8 +29,6 @@ header .container {
   font-family: RobotoMedium;
   vertical-align: middle;
 }
-
-
 
 .icon {
   margin-left: 30px;
@@ -74,7 +71,6 @@ header .container {
 }
 .icon .yellow {
   background: yellow;
-
 }
 .navbar.navbar-default {
   padding: 30px 0px;
@@ -85,16 +81,6 @@ header .container {
   border:none;
   box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
 }
-a.navbar-brand > p {
-  font-family: RobotoBold;
-  display: inline-block;
-  font-size: 1em;
-  color: #57a342;
-  margin-left:10px;
-}
-a.navbar-brand>p:hover  {
-  color:#6cc952;
-}
 
 .collapse.navbar-collapse>ul {
   margin-right:30px;
@@ -103,7 +89,6 @@ a.navbar-brand>p:hover  {
 .collapse.navbar-collapse>ul>li {
   border-bottom: 1px solid transparent;
 }
-
 .collapse.navbar-collapse>ul>li:hover {
   border-bottom: 1px solid #57a342;
 }
@@ -112,16 +97,12 @@ a.navbar-brand>p:hover  {
   right: 25px;
   top:0;
   background: #57a342;
-
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   padding:10px;
   z-index: 101;
-    overflow: hidden;
-
 }
 .social-icons>a {
-  cursor: pointer;
   display: inline-block;
   margin: 0 10px 0 10px;
   color:#006d0c;
@@ -130,9 +111,7 @@ a.navbar-brand>p:hover  {
   color:#00560a;
 }
 
-
 #carousel {
-//	min-width: 800px;
 	margin: 30px auto;
 }
 
